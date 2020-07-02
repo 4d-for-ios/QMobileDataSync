@@ -1,6 +1,8 @@
 
 import Foundation
 import CoreData
+import QMobileAPI
+//import QMobileDataStore
 
 extension NSManagedObject {
     public func has(key: String) -> Bool {
@@ -24,7 +26,7 @@ public enum DataSyncError: Swift.Error {
     case dataStoreNotReady
 
     /// Data store error, for instance cannot load it
-    case dataStoreError(DataStoreError)
+    //case dataStoreError(DataStoreError)
 
     /// An error occurs when synchronizing
     case apiError(APIError)
