@@ -12,10 +12,10 @@ let package = Package(
     products: [
         .library(
             name: "QMobileDataSync",
-            targets: ["QMobileDataSync"]),
+            targets: ["QMobileDataSync"])
     ],
     dependencies: [
-        .package(url: "https://github.com/DaveWoodCom/XCGLogger.git", from: "7.0.0"),
+        .package(url: "https://github.com/DaveWoodCom/XCGLogger.git", from: "7.0.0")
     ],
     targets: [
         .target(
