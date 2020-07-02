@@ -15,12 +15,13 @@ let package = Package(
             targets: ["QMobileDataSync"])
     ],
     dependencies: [
+        .package(url: "https://github.com/4d-for-ios/QMobileAPI.git", .revision("HEAD")),
         .package(url: "https://github.com/DaveWoodCom/XCGLogger.git", from: "7.0.0")
     ],
     targets: [
         .target(
             name: "QMobileDataSync",
-            dependencies: ["XCGLogger"],
+            dependencies: ["XCGLogger", "QMobileAPI"],
             path: "Sources")
     ]
 )
