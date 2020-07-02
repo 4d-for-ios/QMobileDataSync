@@ -1,4 +1,3 @@
-
 import Foundation
 import CoreData
 import QMobileAPI
@@ -9,7 +8,6 @@ extension NSManagedObject {
         return true
     }
 }
-
 
 /// Error of `DataSync` process.
 public enum DataSyncError: Swift.Error {
@@ -45,7 +43,6 @@ public enum DataSyncError: Swift.Error {
 
     /// Unknown error
     case underlying(Error)
-
 }
 
 public class DataSync {
